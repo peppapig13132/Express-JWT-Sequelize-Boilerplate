@@ -1,7 +1,7 @@
-import { Request, Response } from "express";
+import { Request, Response, Application } from "express";
 import authRouter from "./auth.route";
 
-export default (app: any) => {
+export default (app: Application) => {
   app.get("/", (req: Request, res: Response) => {
     res.send("Express.js server is running!");
   });
