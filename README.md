@@ -78,9 +78,9 @@ root
 
 ## Frontend
 
-If you use SPA for your frontend, copy compiled result into 'static' folder.
+If you use SPA for your frontend, copy compiled result into `static` folder.
 
 
 ## Database
 
-Set environment variable `DB_SYNC=true` to synchronize models and database. Learn more about model hronization [here](https://sequelize.org/docs/v6/core-concepts/model-basics/#model-synchronization). Since Sequelize has various versions, you can check Sequelize official site [here](https://sequelize.org/).
+Set environment variable `DB_SYNC=true` to synchronize models and database. Otherwise, set it as `false`. Learn more about model synchronization [here](https://sequelize.org/docs/v6/core-concepts/model-basics/#model-synchronization). Since Sequelize has various versions, you can check Sequelize official site [here](https://sequelize.org/).
