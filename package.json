@@ -1,0 +1,26 @@
+{
+  "name": "express-jwt-sequelize-boilerplate",
+  "version": "1.0.0",
+  "description": "This is Express.js backend boilerplate repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peppapig13132/Express-JWT-Sequelize-Boilerplate.git"
+  },
+  "keywords": [
+    "Express.js",
+    "TypeScript",
+    "JWT",
+    "Sequelize",
+    "Boilerplate"
+  ],
+  "author": "peppapig13132",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peppapig13132/Express-JWT-Sequelize-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/peppapig13132/Express-JWT-Sequelize-Boilerplate#readme"
+}
