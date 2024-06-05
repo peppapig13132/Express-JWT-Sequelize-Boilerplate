@@ -17,4 +17,4 @@ export default (app: Application) => {
   app.get('*', (req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, '..', '..', 'static', 'index.html'));
   });
-}
+};

@@ -23,7 +23,7 @@ export const checkDuplicatedEmail: RequestHandler = async (req: Request, res: Re
   }
 
   next();
-}
+};
 
 export const authenticate: RequestHandler = async (req: AuthRequest, res: Response, next: NextFunction) => {
   const authHeader = req.headers['authorization'];
@@ -73,4 +73,4 @@ export const authenticate: RequestHandler = async (req: AuthRequest, res: Respon
       }
     }
   )
-}
+};
