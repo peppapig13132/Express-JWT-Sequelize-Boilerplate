@@ -1,5 +1,10 @@
 # Express.js Backend Boilerplate
 
+![Node.js](https://img.shields.io/badge/node.js-20.12.2-blue)
+![npm](https://img.shields.io/badge/npm-10.6.0-blue)
+![Express.js](https://img.shields.io/badge/express.js-4.19.2-blue)
+![Sequelize](https://img.shields.io/badge/sequelize-6.37.3-blue)
+
 ## Features
 
 - [x] TypeScript configured
