@@ -1,13 +1,15 @@
 import express, { Application } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import { color } from 'console-log-colors';
 import routes from './routes';
 
-dotenv.config();
+const env = process.env.NODE_ENV || 'development';
+dotenv.config({ path: `.env.${env}` });
 
 const app: Application = express();
 
-const port = process.env.APP_PORT || 8000;
+const port = process.env.APP_PORT;
 
 app.use(cors());
 app.use(express.json());
@@ -15,5 +17,5 @@ app.use(express.json());
 routes(app);
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(color.cyan(`Server running on port ${port} (${env} mode)`));
 });

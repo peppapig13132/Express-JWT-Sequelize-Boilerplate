@@ -4,7 +4,8 @@ import { AuthRequest } from '../interfaces/interfaces';
 import dotenv from 'dotenv';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 
-dotenv.config();
+const env = process.env.NODE_ENV || 'development';
+dotenv.config({ path: `.env.${env}` });
 
 export const checkDuplicatedEmail: RequestHandler = async (req: Request, res: Response, next: NextFunction) => {
   const u = req.body;

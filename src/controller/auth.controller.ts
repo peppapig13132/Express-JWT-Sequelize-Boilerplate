@@ -5,7 +5,8 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 
-dotenv.config();
+const env = process.env.NODE_ENV || 'development';
+dotenv.config({ path: `.env.${env}` });
 
 export const signup: RequestHandler = asyncHandler(async (req: Request, res: Response) => {
   const u = req.body;

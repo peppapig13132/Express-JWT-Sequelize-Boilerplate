@@ -20,9 +20,9 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the server in development mode.
-Open http://localhost:8000 to view it in your browser, you will see `Express.js server is running!`.
+Open http://localhost:8000 to in your browser, you will see `Express.js server is running!`.
 
-### `npm run dev`
+### `npm run start:dev`
 
 Runs the server in development mode with hotload. Hotload configured by [`nodemon`](https://nodemon.io/)
 
@@ -30,9 +30,9 @@ Runs the server in development mode with hotload. Hotload configured by [`nodemo
 
 Builds the app for production to the `dist` folder.
 
-### `npm run serve`
+### `npm run serve:dev`, `npm run serve:prod`
 
-Runs the app for production. Entry file is `dist/index.js`.
+After build the project, Runs the development/production server. Entry file is `dist/index.js`.
 
 
 ### Project Structure
